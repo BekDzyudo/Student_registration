@@ -7,6 +7,7 @@ function regis() {
   let yunalish = document.getElementById("yunalish").value;
   let tbody = document.getElementById("tbody");
   let modal = document.getElementById("modal");
+  let form = document.getElementById("form");
 
   if ((ID, fio, baho, fakultet, yunalish != "")) {
     array.push({
@@ -29,6 +30,7 @@ function regis() {
         <td>${element.fakultet}</td>
         <td>${element.yunalish}</td>
     </tr>`;
+    form.reset();
   }
 }
 
