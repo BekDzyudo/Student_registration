@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 95%;
+  height: auto;
+  margin: 20px auto;
+  position: relative;
+  .row {
+    display: flex;
+    column-gap: 50px;
+    .form_block {
+      box-shadow: 1px 1px 10px black;
+      padding: 20px;
+      width: 30%;
+      height: 600px;
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        #idblock {
+          display: flex;
+          flex-direction: column;
+          row-gap: 7px;
+          #ID {
+            height: 30px;
+            padding: 0px 10px;
+            outline: none;
+          }
+        }
+        #fioblock {
+          display: flex;
+          flex-direction: column;
+          row-gap: 7px;
+          #fio {
+            height: 30px;
+            padding: 0px 10px;
+            outline: none;
+          }
+        }
+        #score {
+          display: flex;
+          flex-direction: column;
+          row-gap: 7px;
+          #baho {
+            height: 30px;
+            padding: 0px 10px;
+            outline: none;
+          }
+        }
+        #fak {
+          display: flex;
+          flex-direction: column;
+          row-gap: 7px;
+          #fakultet {
+            height: 30px;
+            padding: 0px 10px;
+            outline: none;
+          }
+        }
+        #yun {
+          display: flex;
+          flex-direction: column;
+          row-gap: 7px;
+          #yunalish {
+            height: 30px;
+            padding: 0px 10px;
+            outline: none;
+          }
+        }
+        #mybtn {
+          width: 40%;
+          height: 40px;
+          margin-left: 110px;
+          border: none;
+          background-color: blue;
+          color: white;
+          border-radius: 4px;
+          font-size: 16px;
+          cursor: pointer;
+          &:hover {
+            background-color: rgb(45, 45, 228);
+          }
+        }
+      }
+    }
+    .table_block {
+      width: 70%;
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        .thead {
+          font-weight: 600;
+          font-size: 16px;
+          background-color: rgb(34, 33, 33);
+          color: white;
+        }
+        tr {
+          background-color: #ccc;
+          td {
+            border: 1px solid gray;
+            height: 30px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  #modal {
+    display: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    padding: 15px 10px;
+    background-color: rgb(148, 171, 212);
+    animation: myModal 0.4s ease;
+    h4 {
+      margin-right: 220px;
+      color: red;
+    }
+    p {
+      font-size: 17px;
+      margin-top: 55px;
+      margin-left: 15px;
+    }
+    #modal_btn {
+      padding: 5px 15px;
+      border-radius: 4px;
+      background-color: blue;
+      color: white;
+      margin-left: 200px;
+      margin-top: 50px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+@keyframes myModal {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
